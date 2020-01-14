@@ -30,11 +30,11 @@ You can either complete the test prior to the interview or come in and do it as 
 * Please ask any questions you wish
 * The coding exercise will be done on the developer test laptop (1141): Test // Wagering99
 
-### Solution
+## Solution
 This is an ASP.NET Core Web API.  You need to compile and run the project in Visual Studio.  You can test the API from the Swagger dashboard in the browser when executing the project.
 
 Project structure:
-	BetEasy.Api - The startup project.  This will start IIS Express and the Web API host site
-	BetEasy.Contracts - Models and interfaces are stored in this project which can be referenced by any other projects but doesn't have reference to any other projects in the solution.
-	BetEasy.Service - Business logic layer
-	BetEasy.Tests - Unit tests
+* BetEasy.Api - The startup project.  This will start IIS Express and the Web API host site
+* BetEasy.Contracts - Models and interfaces are stored in this project which can be referenced by any other projects but doesn't have reference to any other projects in the solution.
+* BetEasy.Service - Business logic layer
+* BetEasy.Tests - Unit tests
