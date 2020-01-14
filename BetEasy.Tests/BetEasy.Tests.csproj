@@ -15,7 +15,12 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BetEasy.Api\BetEasy.Api.csproj" />
+    <ProjectReference Include="..\BetEasy.Contracts\BetEasy.Contracts.csproj" />
+    <ProjectReference Include="..\BetEasy.Services\BetEasy.Services.csproj" />
   </ItemGroup>
 
 </Project>
