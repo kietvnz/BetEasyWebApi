@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BetEasy.Contracts.Configurations;
+using BetEasy.Contracts.Interfaces.Services;
+using BetEasy.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -46,7 +48,9 @@ namespace BetEasyWebApi
             });
 
             #region Services Dependency Injections
-            
+            services.AddTransient<IJsonFileParser, JsonFileParser>();
+            services.AddTransient<IXmlFileParser, XmlFileParser>();
+            services.AddTransient<IHorseService, HorseService>();
             #endregion
         }
 
